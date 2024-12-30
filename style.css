@@ -4,6 +4,7 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 header {
@@ -34,7 +35,14 @@ header {
     gap: 20px;
 }
 
-.nav-links a {
+.nav-links-list{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+.nav-links li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
@@ -94,10 +102,27 @@ header {
     cursor: pointer;
 }
 
+.open-menu {
+    background:transparent;
+    border: none;
+    display:none;
+}
+
+.close-menu {
+    background:transparent;
+    border: none;
+    display:none;
+}
+
+i{
+    width: 30px;
+    cursor: pointer;    
+}
 
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
+        opacity: 0;
+        visibility: hidden;
     }
     .login-button {
         display: none;
@@ -134,7 +159,7 @@ header {
         align-items: center;
         margin: 50px 20px;
     }
-
+    
     .buttons{
         display: flex;
         flex-direction: column;
@@ -154,5 +179,61 @@ header {
     .hero-text p {
         font-size: 1rem;
         text-align: center;
+    }
+    .open-menu {
+        display:block;
+    }
+    .close-menu {
+        display:block;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ffffff;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(100%); 
+        transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    }
+    
+    .nav-links.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0); 
+    }
+    
+    .open-menu {
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .close-menu {
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+
+    .nav-links.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-links-list{
+        flex-direction: column;
+        align-items: end;
     }
 }

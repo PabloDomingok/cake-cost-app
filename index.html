@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cake Cost</title>
+    <script src="https://kit.fontawesome.com/b82ddda10e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assests/logo.png" type="image/png">
 </head>
@@ -13,10 +14,15 @@
             <img src="assests/logo.png" alt="Logo">
             <span>CakeCost</span>
         </div>
-        <nav class="nav-links">
-            <a href="#contact">Contact Us</a>
-            <a href="#blog">Blog</a>
-            <a href="#about">About CakeCost</a>
+        <button class="open-menu" id="open-menu"><i class="fa-solid fa-bars"></i></button>
+        <nav class="nav-links" id="nav-links">
+            <button class="close-menu" id="close-menu"><i class="fa-solid fa-x"></i></button>
+            <ul class="nav-links-list">
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">About CakeCost</a></li>
+                
+            </ul>
         </nav>
         <button class="login-button">Login</button>
     </header>
@@ -36,6 +42,6 @@
             </div>
         </section>
     
-    
+    <script src="script.js"></script>
 </body>
 </html>
