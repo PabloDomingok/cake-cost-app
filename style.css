@@ -7,6 +7,12 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -200,7 +206,7 @@ i{
         padding: 20px;
         opacity: 0;
         visibility: hidden;
-        transform: translateX(100%); 
+        transform: translateX(0%); 
         transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
     }
     
