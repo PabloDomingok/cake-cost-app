@@ -8,6 +8,7 @@
 }
 
 
+
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -159,6 +160,54 @@ i{
     margin-bottom: 20px;
 }
 
+/* how to use */
+
+.how-to-use {
+    display: grid;
+    justify-content: center;
+    gap: 40px;
+    background-color: #ffffff;
+    margin: 50px 50px;
+}
+.how-to-use-text{
+    display: flex;
+    gap: 20px;
+}
+
+.bar{
+    width: 50px;
+    height: 5px;
+    background-color: #000000;
+    margin:20px 0 20px 0;
+    border-radius: 5px;
+}
+
+.how-to-use-image {
+    width: 540px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.how-to-use h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ol {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+  }
+
+  ol::marker {
+    font-weight: bold;
+  }
+
+  .how-to-list {
+    margin-bottom: 8px;
+  }
+
 @media (max-width: 768px) {
     .nav-links {
         opacity: 0;
@@ -173,6 +222,12 @@ i{
    .about{
     margin: 50px 20px;
    }
+   .how-to-use{
+    margin: 50px 20px;
+   }
+   .how-to-use-image {
+   display: none;
+}
    
 }
 
