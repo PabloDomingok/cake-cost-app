@@ -208,6 +208,54 @@ ol {
     margin-bottom: 8px;
   }
 
+  /* features */
+
+.features {
+    display: grid;
+    justify-content: center;
+    gap: 40px;
+    background-color: #ffffff;
+    margin: 50px 50px;
+}
+.features-text{
+    display: flex;
+    gap: 20px;
+}
+
+.bar{
+    width: 50px;
+    height: 5px;
+    background-color: #000000;
+    margin:20px 0 20px 0;
+    border-radius: 5px;
+}
+
+.features-image {
+    width: 540px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.features h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul::marker {
+    font-weight: bold;
+  }
+
+  .features-list {
+    margin-bottom: 8px;
+  }
+
 @media (max-width: 768px) {
     .nav-links {
         opacity: 0;
@@ -226,6 +274,12 @@ ol {
     margin: 50px 20px;
    }
    .how-to-use-image {
+   display: none;
+}
+.features{
+    margin: 50px 20px;
+   }
+   .features-image {
    display: none;
 }
    
